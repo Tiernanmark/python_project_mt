@@ -1,9 +1,25 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>Welcome to the Fraiser episode log</h1>
-<p>*** list and selection page ***</p>
+<h2>Search Frasier Episodes</h2>
+    <form method="POST" action="/episodes">
+        <input 
+            type="text" 
+            name="search_query" 
+            value="{{ query }}" 
+            placeholder="Search..."
+            required
+        >
+        <button type="submit">Search</button>
+        <a href="/episodes"><button type="button">Clear</button></a>
+    </form>
 
-
-
+    <h3>Results:</h3>
+    <ul>
+        {% for e in results %}
+            <li>{{ e.season }} {{ e.episode }}: <strong>{{ e.title }}</strong> (Aired: {{ e.air_date }})</li>
+        {% else %}
+            <li>No episodes found matching "{{ query }}".</li>
+        {% endfor %}
+    </ul>
 {% endblock %}
