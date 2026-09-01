@@ -109,7 +109,6 @@ def episodes_page():
                 or query.lower() in e.episode.lower()
                 or query.lower() in e.air_date.lower()
                 ]
-        
     return render_template("episodes.html", results=results, query=query)
 
 @app.route("/about")
