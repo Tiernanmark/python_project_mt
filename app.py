@@ -1,6 +1,10 @@
+import os
+
 from flask import Flask, render_template, request
 
 app = Flask(__name__)
+
+app.secret_key = os.environ['SECRET_KEY']
 
 class Episode:
     def __init__(self, season, episode, title, air_date):

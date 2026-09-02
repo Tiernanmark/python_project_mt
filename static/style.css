@@ -1,4 +1,12 @@
 
 body{
-    background-color: brown;
+    background-color: rgb(128, 27, 27);
+}
+
+h1,
+h2,
+h3,
+h4,
+p{
+    color: white;
 }
