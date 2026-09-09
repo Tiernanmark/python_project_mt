@@ -10,3 +10,7 @@ h4,
 p{
     color: white;
 }
+
+form{
+    max-width: 600px;
+}
