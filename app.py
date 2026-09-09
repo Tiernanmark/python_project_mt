@@ -1,6 +1,6 @@
 import os
 
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, flash, redirect
 
 app = Flask(__name__)
 
@@ -119,10 +119,31 @@ def episodes_page():
 def about():
     return render_template("about.html")
 
-@app.route("/contact")
+@app.route("/contact", methods=("GET", "POST"))
 def contact():
-    return render_template("contact.html")
+    if request.method == "POST":
+        name = request.form.get("name", " ").strip()
+        email = request.form.get("email", " ").strip()
+        subject = request.form.get("subject", " ").strip()
+        message = request.form.get("message", " ").strip()
 
+        errors = []
+        if not name:
+            errors.append("Name is required")
+        if not email:
+            errors.append("Email is required")
+        if not subject:
+            errors.append("Subject is required")
+        if not message:
+            errors.append("Message is required")
+
+        if errors:
+            return render_template("contact.html", errors=[], name=name, email=email, subject=subject, message=message)
+
+        flash("Thank you for your message")
+        return redirect("/contact")
+    return render_template("contact.html", errors=[], name="", email="", subject="", message="")
+                    
 if __name__ == "__main__":
     app.run(debug=True)
 
