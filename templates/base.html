@@ -12,14 +12,14 @@
         <div class="container py-4">
             <div class="text-center">
                 <a href="{{ url_for('home') }}">
-                    <img src="static\images\frasier-frasier-logo-brand-a-transparent.png" alt="Frasier Logo" width="500">
+                    <img src="static\images\frasier-frasier-logo-brand-a-transparent.png" alt="Frasier Logo" max-width="500">
                 </a>
             </div>
         </div>
     </header>
     <nav class="navbar navbar-expand-lg border border-3 border-dark">
         <div class="container">
-            <h1 class="navbar-brand d-lg-none">I'm listening...</h1>
+            <h1 class="navbar-brand d-lg-none fs-1 fw-bold">I'm listening...</h1>
             <button
                 class="navbar-toggler"
                 type="button"
@@ -31,7 +31,7 @@
             >
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-center" id="mainNav">
+            <div class="collapse navbar-collapse justify-content-center">
                 <ul class="navbar-nav fs-2 gap-4">
                     <li class="nav-item">
                         <a class="nav-link btn btn-outline-light px-4 fw-bold " href="{{ url_for('home') }}">

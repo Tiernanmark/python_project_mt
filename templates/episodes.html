@@ -15,7 +15,7 @@
     </form>
 
     <h3>Results:</h3>
-    <ul>
+    <ul class="episode_results">
         {% for e in results %}
             <li>{{ e.season }} {{ e.episode }}: <strong>{{ e.title }}</strong> (Aired: {{ e.air_date }})</li>
         {% else %}

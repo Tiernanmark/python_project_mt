@@ -4,15 +4,15 @@
 <h1>Who's on line one?</h1>
 
 <form action="/contact" method="POST" class="p-3">
-    <div class="mb-3">
+    <div class="mb-3 fs-3">
         <label for="name">Name</label>
         <input name="name" id="name" class="form-control" type="text" value="{{ name }}">
     </div>
-    <div class="mb-3">
+    <div class="mb-3 fs-3">
         <label for="email">Email</label>
         <input email="email" id="email" class="form-control" type="email" value="{{ email }}">
     </div>
-    <div class="mb-3">
+    <div class="mb-3 fs-3">
         <label for="subject">Subject</label>
         <select name="subject" id="subject" class="form-control">
             <option value="">Choose a subject</option>
@@ -22,7 +22,7 @@
             <option>Feedback</option>
         </select>
     </div>
-    <div class="mb-3">
+    <div class="mb-3 fs-3">
         <label for="message">Message</label>
         <textarea name="message" id="message" class="form-control">{{ message }}</textarea>
     </div>
@@ -33,7 +33,7 @@
         {% endfor %}
     </ul>
     {% endif %}
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-primary fs-2">Submit</button>
 </form>
 
 

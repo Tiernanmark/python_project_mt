@@ -8,7 +8,7 @@ h2,
 h3,
 h4,
 p{
-    color: white;
+    color: #cb9b51;
 }
 
 .navbar{
@@ -34,4 +34,29 @@ form{
 
 header.div.div.img {
     max-width: 200px;
+}
+
+.episode_results {
+    color: #cb9b51;
+}
+
+form div label {
+    color: #cb9b51;
+}
+
+.btn-primary {
+    color: rgb(128, 27, 27);
+    background-color: #cb9b51;
+    border-color: #cb9b51;
+}
+.btn-primary:hover {
+    color: #cb9b51;
+    background-color: rgb(128, 27, 27);
+    border-color: #cb9b51;
+}
+
+
+.navbar .nav-link:hover {
+    background-color: rgb(128, 27, 27);
+    color: #cb9b51;
 }

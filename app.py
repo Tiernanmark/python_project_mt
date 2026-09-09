@@ -133,7 +133,7 @@ def ranking():
         character = request.form.get("character")
         if character in votes:
             votes[character] += 1
-        return redirect(url_for("ranking"))
+        return redirect("/ranking")
 
     sorted_votes = dict(sorted(votes.items(), key=lambda item: item[1], reverse=True))
 
