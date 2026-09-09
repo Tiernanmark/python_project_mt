@@ -1,6 +1,6 @@
 import os
 
-from flask import Flask, render_template, request, flash, redirect
+from flask import Flask, render_template, request, flash, redirect, url_for
 
 app = Flask(__name__)
 
@@ -118,6 +118,28 @@ def episodes_page():
 @app.route("/about")
 def about():
     return render_template("about.html")
+
+votes = {
+"Frasier": 0,
+"Niles": 0,
+"Martin": 0,
+"Daphne": 0,
+"Roz": 0
+}
+
+@app.route("/ranking", methods=["GET", "POST"])
+def ranking():
+    if request.method == "POST":
+        character = request.form.get("character")
+        if character in votes:
+            votes[character] += 1
+        return redirect(url_for("ranking"))
+
+    sorted_votes = dict(sorted(votes.items(), key=lambda item: item[1], reverse=True))
+
+    return render_template("ranking.html", votes=sorted_votes)
+
+
 
 @app.route("/contact", methods=("GET", "POST"))
 def contact():

@@ -14,3 +14,18 @@ p{
 form{
     max-width: 600px;
 }
+
+.character-card {
+    width: 180px;
+    flex-shrink: 0;
+    padding: 2rem;
+}
+.character-card img {
+    width: 180px;
+    height: 220px;
+    object-fit: cover;
+}
+
+header.div.div.img {
+    max-width: 200px;
+}
