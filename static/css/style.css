@@ -85,6 +85,14 @@ form div label {
     font-family: "Poiret One", sans-serif;
 }
 
+.current_champion{
+    background-color: #cb9b51;
+    padding: 2rem;
+}
+.current_champion h2{
+    color: rgb(128, 27, 27);
+}
+
 @media (max-width: 512px){
   header div div a img{
     width: 300px;
