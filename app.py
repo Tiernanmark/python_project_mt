@@ -94,6 +94,14 @@ all_episodes = [
     Episode("S3", "E24", "You Can Go Home Again", "21 May 1996")
 ]
 
+votes = {
+"Frasier": 0,
+"Niles": 0,
+"Martin": 0,
+"Daphne": 0,
+"Roz": 0
+}
+
 @app.route("/")
 def home():
     return render_template("home.html")
@@ -118,14 +126,6 @@ def episodes_page():
 @app.route("/about")
 def about():
     return render_template("about.html")
-
-votes = {
-"Frasier": 0,
-"Niles": 0,
-"Martin": 0,
-"Daphne": 0,
-"Roz": 0
-}
 
 @app.route("/ranking", methods=["GET", "POST"])
 def ranking():
