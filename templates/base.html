@@ -73,9 +73,16 @@
         </div>
     </main>
     <footer class="mt-5">
-        <div class="container text-center">
-            <p>"I don't know what to do with those tossed salads and scrambled eggs!"</p>
-            <p>"Good night, Seattle."</p>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 col-md-11 text-center fs-2">
+                    <p>"I don't know what to do with those tossed salads and scrambled eggs!"</p>
+                    <p>"Good night, Seattle."</p>
+                </div>
+                <div class="col-12 col-md-1">
+                    <a href="{{ url_for('contact') }}" class="border border-3 border-dark">Contact</a>
+                </div>
+            </div>
         </div>
     </footer>
 
