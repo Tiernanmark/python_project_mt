@@ -104,7 +104,17 @@ votes = {
 
 @app.route("/")
 def home():
-    return render_template("home.html")
+
+    winner = max(votes, key=votes.get)
+
+    images = {
+        "Frasier": "frasier.webp",
+        "Niles": "niles.webp",
+        "Martin": "martin.webp",
+        "Daphne": "daphne.webp",
+        "Roz": "roz.webp",
+    }
+    return render_template("home.html", winner=winner, winner_image=images[winner])
 
 @app.route("/episodes", methods=["GET", "POST"])
 def episodes_page():
