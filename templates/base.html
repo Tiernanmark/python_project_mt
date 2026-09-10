@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frasier</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container py-4">
             <div class="text-center">
                 <a href="{{ url_for('home') }}">
-                    <img src="static\images\frasier-frasier-logo-brand-a-transparent.png" alt="Frasier Logo" max-width="500">
+                    <img src="{{ url_for('static', filename='images/frasier-frasier-logo-brand-a-transparent.png') }}" alt="Frasier Logo" width="500">
                 </a>
             </div>
         </div>
@@ -31,7 +34,7 @@
             >
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-center">
+            <div class="collapse navbar-collapse justify-content-center" id="mainNav">
                 <ul class="navbar-nav fs-2 gap-4">
                     <li class="nav-item">
                         <a class="nav-link btn btn-outline-light px-4 fw-bold " href="{{ url_for('home') }}">
