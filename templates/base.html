@@ -66,6 +66,15 @@
         </div>
     </nav>
     <main class="container my-5">
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="alert flash_success text-center">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
         <div>
             {% block content %}
                 <h1>Default content</h1>
@@ -79,7 +88,7 @@
                     <p>"I don't know what to do with those tossed salads and scrambled eggs!"</p>
                     <p>"Good night, Seattle."</p>
                 </div>
-                <div class="col-12 col-md-1">
+                <div class="footer_contact col-12 col-md-1 pb-4">
                     <a href="{{ url_for('contact') }}" class="border border-3 border-dark">Contact</a>
                 </div>
             </div>

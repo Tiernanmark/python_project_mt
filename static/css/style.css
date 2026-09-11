@@ -16,6 +16,7 @@ h4,
 p{
     color: #cb9b51;
 }
+
 h1,
 h2,
 h3,
@@ -67,12 +68,17 @@ form div label {
     font-family: "Poiret One", sans-serif;
     font-weight: 1000;
 }
+
 .btn-primary:hover {
     color: #cb9b51;
     background-color: rgb(128, 27, 27);
     border-color: #cb9b51;
     font-family: "Poiret One", sans-serif;
-    font-weight: 1000;
+}
+
+.search-primary {
+    border-color: #cb9b51;
+    font-family: "Poiret One", sans-serif;
 }
 
 .navbar .nav-link {
@@ -93,11 +99,20 @@ form div label {
     color: rgb(128, 27, 27);
 }
 
+.flash_success{
+    color: rgb(128, 27, 27);
+    background-color: #cb9b51;
+    font-size: x-large;   
+    font-family: "Poiret One", sans-serif;
+    font-weight: bolder;
+}
+
 footer{
     background: linear-gradient(135deg, #aa5a18 0%, #cb9b51 50%, #f6e27a 75%, #aa5a18 100%);
     border-width: 3px;
     border-color: black;
 }
+
 footer div div div p{
     color: rgb(29, 28, 28);
     font-weight: bold;
@@ -117,5 +132,5 @@ footer div div div a{
 @media (max-width: 512px){
   header div div a img{
     width: 300px;
-  }    
+  }
 }

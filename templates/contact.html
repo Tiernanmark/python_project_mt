@@ -2,7 +2,6 @@
 
 {% block content %}
 <h1>Who's on line one?</h1>
-
 <form action="/contact" method="POST" class="p-3">
     <div class="mb-3 fs-3">
         <label for="name">Name</label>
@@ -10,7 +9,7 @@
     </div>
     <div class="mb-3 fs-3">
         <label for="email">Email</label>
-        <input email="email" id="email" class="form-control" type="email" value="{{ email }}">
+        <input name="email" id="email" class="form-control" type="email" value="{{ email }}">
     </div>
     <div class="mb-3 fs-3">
         <label for="subject">Subject</label>
@@ -27,15 +26,12 @@
         <textarea name="message" id="message" class="form-control">{{ message }}</textarea>
     </div>
     {% if errors %}
-    <ul class="text-danger">
-        {% for error in errors %}
-        <li>{{ error }}</li>
-        {% endfor %}
-    </ul>
+        <ul class="text-danger">
+            {% for error in errors %}
+            <li>{{ error }}</li>
+            {% endfor %}
+        </ul>
     {% endif %}
     <button type="submit" class="btn btn-primary fs-2">Submit</button>
 </form>
-
-
-
 {% endblock %}

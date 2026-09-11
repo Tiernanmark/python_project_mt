@@ -2,78 +2,70 @@
 
 {% block content %}
 <h1 class="text-center">Vote For Your Favourite Frasier Character</h1>
-
 <div class="d-flex flex-wrap justify-content-center gap-5">
-
     <div class="character-card">
         <form method="POST">
             <input type="hidden" name="character" value="Frasier">
             <button class="fs-3" type="submit">
-                <img src="static\images\frasier.webp" alt="Image of Fraiser">
+                <img src="static/images/frasier.webp" alt="Image of Fraiser">
                 Frasier
             </button>
         </form>
     </div>
-
     <div class="character-card">
         <form method="POST">
             <input type="hidden" name="character" value="Niles">
             <button class="fs-3" type="submit">
-                <img src="static\images\niles.webp" alt="Image of Niles">
+                <img src="static/images/niles.webp" alt="Image of Niles">
                 Niles
             </button>
         </form>
     </div>
-
     <div class="character-card">
         <form method="POST">
             <input type="hidden" name="character" value="Martin">
             <button class="fs-3" type="submit">
-                <img src="static\images\martin.webp" alt="Image of Martin">
+                <img src="static/images/martin.webp" alt="Image of Martin">
                 Martin
             </button>
         </form>
     </div>
-
     <div class="character-card">
         <form method="POST">
             <input type="hidden" name="character" value="Daphne">
             <button class="fs-3" type="submit">
-                <img src="static\images\daphne.webp" alt="Image of Daphne">
+                <img src="static/images/daphne.webp" alt="Image of Daphne">
                 Daphne
             </button>
         </form>
     </div>
-
     <div class="character-card">
         <form method="POST">
             <input type="hidden" name="character" value="Roz">
             <button class="fs-3" type="submit">
-                <img src="static\images\roz.webp" alt="Image of Roz">
+                <img src="static/images/roz.webp" alt="Image of Roz">
                 Roz
             </button>
         </form>
     </div>
-
 </div>
-
 <div class="results text-white text-center">
     <h2>Total Votes</h2>
-
     <table class="mx-auto fs-5">
-        <tr>
-            <th>Character</th>
-            <th>Votes</th>
-        </tr>
-
-        {% for character, count in votes.items() %}
-        <tr>
-            <td>{{ character }}</td>
-            <td>{{ count }}</td>
-        </tr>
-        {% endfor %}
+        <thead>
+            <tr>
+                <th>Character</th>
+                <th>Votes</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for character, count in votes.items() %}
+                <tr>
+                    <td>{{ character }}</td>
+                    <td>{{ count }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
     </table>
 </div>
-
-
 {% endblock %}

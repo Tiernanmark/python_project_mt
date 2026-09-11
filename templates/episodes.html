@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h2>Search Frasier Episodes</h2>
+<h1>Search Frasier Episodes</h1>
     <form method="POST" action="/episodes">
         <input 
             type="text" 
@@ -9,12 +9,12 @@
             value="{{ query }}" 
             placeholder="Search..."
             required
+            class="search-primary"
         >
-        <button type="submit">Search</button>
-        <a href="/episodes"><button type="button">Clear</button></a>
+        <button type="submit" class="btn btn-primary">Search</button>
+        <a href="/episodes" class="btn btn-primary">Clear</a>
     </form>
-
-    <h3>Results:</h3>
+    <h2>Results:</h2>
     <ul class="episode_results">
         {% for e in results %}
             <li>{{ e.season }} {{ e.episode }}: <strong>{{ e.title }}</strong> (Aired: {{ e.air_date }})</li>

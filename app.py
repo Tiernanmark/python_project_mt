@@ -149,8 +149,6 @@ def ranking():
 
     return render_template("ranking.html", votes=sorted_votes)
 
-
-
 @app.route("/contact", methods=("GET", "POST"))
 def contact():
     if request.method == "POST":
@@ -170,7 +168,7 @@ def contact():
             errors.append("Message is required")
 
         if errors:
-            return render_template("contact.html", errors=[], name=name, email=email, subject=subject, message=message)
+            return render_template("contact.html", errors=errors, name=name, email=email, subject=subject, message=message)
 
         flash("Thank you for your message")
         return redirect("/contact")
