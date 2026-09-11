@@ -19,6 +19,7 @@ class Episode:
     def summary(self):
         return str(self)
 
+# All episodes used for search on episodes.html using above class to make storing and retrieving information easier
 all_episodes = [
     Episode("S1", "E1", "The Good Son", "16 September 1993"),
     Episode("S1", "E2", "Space Quest", "23 September 1993"),
@@ -94,6 +95,7 @@ all_episodes = [
     Episode("S3", "E24", "You Can Go Home Again", "21 May 1996")
 ]
 
+# votes used by home.html to determin which image is used based on the current count on ranking.html
 votes = {
 "Frasier": 0,
 "Niles": 0,
@@ -102,11 +104,13 @@ votes = {
 "Roz": 0
 }
 
+
+
 @app.route("/")
 def home():
-
+# Max used to find character with highest votes form ranking.html
     winner = max(votes, key=votes.get)
-
+# Allows the winning character image to be displayed on the home.html
     images = {
         "Frasier": "frasier.webp",
         "Niles": "niles.webp",
@@ -116,11 +120,14 @@ def home():
     }
     return render_template("home.html", winner=winner, winner_image=images[winner])
 
+
+
 @app.route("/episodes", methods=["GET", "POST"])
 def episodes_page():
     results = all_episodes
     query = ""
 
+# searches through all catorgories and generates a list of teh episodes that match the search input
     if request.method == "POST":
         query = request.form.get("search_query", "").strip()
         if query:
@@ -133,12 +140,17 @@ def episodes_page():
                 ]
     return render_template("episodes.html", results=results, query=query)
 
+
+
 @app.route("/about")
 def about():
     return render_template("about.html")
 
+
+
 @app.route("/ranking", methods=["GET", "POST"])
 def ranking():
+# Adds 1 to selected characture and returns to ranking.html with increase in choose character counter
     if request.method == "POST":
         character = request.form.get("character")
         if character in votes:
@@ -149,8 +161,11 @@ def ranking():
 
     return render_template("ranking.html", votes=sorted_votes)
 
+
+
 @app.route("/contact", methods=("GET", "POST"))
 def contact():
+# Basic form with flash and error validation
     if request.method == "POST":
         name = request.form.get("name", " ").strip()
         email = request.form.get("email", " ").strip()
@@ -173,7 +188,9 @@ def contact():
         flash("Thank you for your message")
         return redirect("/contact")
     return render_template("contact.html", errors=[], name="", email="", subject="", message="")
-                    
+
+
+
 if __name__ == "__main__":
     app.run(debug=True)
 
