@@ -68,10 +68,11 @@ def episodes_page():
             results = [
                 e for e in all_episodes 
                 if query.lower() in e.title.lower()
-                or query.lower() in e.season.lower()
-                or query.lower() in e.episode.lower()
+                or query.lower() in str(e.season).lower()
+                or query.lower() in str(e.episode).lower()
                 or query.lower() in e.air_date.lower()
                 ]
+    
     return render_template("episodes.html", results=results, query=query)
 
 @app.route("/about")
@@ -118,4 +119,4 @@ def contact():
     return render_template("contact.html", errors=[], name="", email="", subject="", message="")
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    app.run(debug=True)
