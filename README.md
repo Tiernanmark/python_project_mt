@@ -154,5 +154,5 @@ The custom font was sourced using [Google Fonts](https://fonts.google.com/).
 
 ### Ferdia O'Brien - Director of Engineering - Scorebuddy
 
-- Advised on json data structures
+- Advised on json data structures and use of Postman
 - Reviewed and critiqued the code where needed (example: switching debugger to False befor deployment)
