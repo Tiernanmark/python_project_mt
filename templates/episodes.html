@@ -17,7 +17,7 @@
     <h2>Results:</h2>
     <ul class="episode_results">
         {% for e in results %}
-            <li>{{ e.season }} {{ e.episode }}: <strong>{{ e.title }}</strong> (Aired: {{ e.air_date }})</li>
+            <li>S:{{ e.season }} E:{{ e.episode }}: <strong>{{ e.title }}</strong> (Aired: {{ e.air_date }})</li>
         {% else %}
             <li>No episodes found matching "{{ query }}".</li>
         {% endfor %}

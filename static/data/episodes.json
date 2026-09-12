@@ -1,0 +1,434 @@
+[
+  {
+    "season": 1,
+    "episode": 1,
+    "title": "The Good Son",
+    "air_date": "16 September 1993"
+  },
+  {
+    "season": 1,
+    "episode": 2,
+    "title": "Space Quest",
+    "air_date": "23 September 1993"
+  },
+  {
+    "season": 1,
+    "episode": 3,
+    "title": "Dinner At Eight",
+    "air_date": "30 September 1993"
+  },
+  {
+    "season": 1,
+    "episode": 4,
+    "title": "I Hate Frasier Crane",
+    "air_date": "7 October 1993"
+  },
+  {
+    "season": 1,
+    "episode": 5,
+    "title": "Here's Looking At You",
+    "air_date": "214 October 1993"
+  },
+  {
+    "season": 1,
+    "episode": 6,
+    "title": "The Crucible",
+    "air_date": "21 October 1993"
+  },
+  {
+    "season": 1,
+    "episode": 7,
+    "title": "Call Me Irresponsible",
+    "air_date": "28 October 1993"
+  },
+  {
+    "season": 1,
+    "episode": 8,
+    "title": "Beloved Infidel",
+    "air_date": "4 November 1993"
+  },
+  {
+    "season": 1,
+    "episode": 9,
+    "title": "Selling Out",
+    "air_date": "11 November 1993"
+  },
+  {
+    "season": 1,
+    "episode": 10,
+    "title": "Oops",
+    "air_date": "18 November 1993"
+  },
+  {
+    "season": 1,
+    "episode": 11,
+    "title": "Death Becomes Him",
+    "air_date": "2 December 1993"
+  },
+  {
+    "season": 1,
+    "episode": 12,
+    "title": "Miracle On Third Or Fourth Street",
+    "air_date": "16 December 1993"
+  },
+  {
+    "season": 1,
+    "episode": 13,
+    "title": "Guess Who's Coming To Breakfast",
+    "air_date": "6 January 1994"
+  },
+  {
+    "season": 1,
+    "episode": 14,
+    "title": "Can't Buy Me Love",
+    "air_date": "20 January 1994"
+  },
+  {
+    "season": 1,
+    "episode": 15,
+    "title": "You Can't Tell A Crook By His Cover",
+    "air_date": "27 January 1994"
+  },
+  {
+    "season": 1,
+    "episode": 16,
+    "title": "The Show Where Lilith Comes Back",
+    "air_date": "3 February 1994"
+  },
+  {
+    "season": 1,
+    "episode": 17,
+    "title": "A Mid-Winter Night's Dream",
+    "air_date": "10 February 1994"
+  },
+  {
+    "season": 1,
+    "episode": 18,
+    "title": "And The Whimper Is...",
+    "air_date": "17 February 1994"
+  },
+  {
+    "season": 1,
+    "episode": 19,
+    "title": "Give Him The Chair!",
+    "air_date": "17 March 1994"
+  },
+  {
+    "season": 1,
+    "episode": 20,
+    "title": "Fortysomething",
+    "air_date": "31 March 1994"
+  },
+  {
+    "season": 1,
+    "episode": 21,
+    "title": "Travels With Martin",
+    "air_date": "14 April 1994"
+  },
+  {
+    "season": 1,
+    "episode": 22,
+    "title": "Author, Author",
+    "air_date": "5 May 1994"
+  },
+  {
+    "season": 1,
+    "episode": 23,
+    "title": "Frasier Crane's Day Off",
+    "air_date": "12 May 1994"
+  },
+  {
+    "season": 1,
+    "episode": 24,
+    "title": "My Coffee With Niles",
+    "air_date": "19 May 1994"
+  },
+  {
+    "season": 2,
+    "episode": 1,
+    "title": "Slow Tango In South Seattle",
+    "air_date": "20 SEPTEMBER 1994"
+  },
+  {
+    "season": 2,
+    "episode": 2,
+    "title": "The Unkindest Cut Of All",
+    "air_date": "27 SEPTEMBER 1994"
+  },
+  {
+    "season": 2,
+    "episode": 3,
+    "title": "The Matchmaker",
+    "air_date": "4 OCTOBER 1994"
+  },
+  {
+    "season": 2,
+    "episode": 4,
+    "title": "Flour Child",
+    "air_date": "11 OCTOBER 1994"
+  },
+  {
+    "season": 2,
+    "episode": 5,
+    "title": "Duke's, We Hardly Knew Ye",
+    "air_date": "18 OCTOBER 1994"
+  },
+  {
+    "season": 2,
+    "episode": 6,
+    "title": "The Botched Language Of Cranes",
+    "air_date": "1 NOVEMBER 1994"
+  },
+  {
+    "season": 2,
+    "episode": 7,
+    "title": "The Candidate",
+    "air_date": "8 NOVEMBER 1994"
+  },
+  {
+    "season": 2,
+    "episode": 8,
+    "title": "Adventures In Paradise: Part 1",
+    "air_date": "15 NOVEMBER 1994"
+  },
+  {
+    "season": 2,
+    "episode": 9,
+    "title": "Adventures In Paradise: Part 2",
+    "air_date": "22 NOVEMBER 1994"
+  },
+  {
+    "season": 2,
+    "episode": 10,
+    "title": "Burying A Grudge",
+    "air_date": "29 NOVEMBER 1994"
+  },
+  {
+    "season": 2,
+    "episode": 11,
+    "title": "Seat Of Power",
+    "air_date": "13 DECEMBER 1994"
+  },
+  {
+    "season": 2,
+    "episode": 12,
+    "title": "Roz In The Doghouse",
+    "air_date": "3 JANUARY 1995"
+  },
+  {
+    "season": 2,
+    "episode": 13,
+    "title": "Retirement Is Murder",
+    "air_date": "10 JANUARY 1995"
+  },
+  {
+    "season": 2,
+    "episode": 14,
+    "title": "Fool Me Once, Shame On You, Fool Me Twice...",
+    "air_date": "7 FEBRUARY 1995"
+  },
+  {
+    "season": 2,
+    "episode": 15,
+    "title": "You Scratch My Book...",
+    "air_date": "14 FEBRUARY 1995"
+  },
+  {
+    "season": 2,
+    "episode": 16,
+    "title": "The Show Where Sam Shows Up",
+    "air_date": "21 FEBRUARY 1995"
+  },
+  {
+    "season": 2,
+    "episode": 17,
+    "title": "Daphne's Room",
+    "air_date": "28 FEBRUARY 1995"
+  },
+  {
+    "season": 2,
+    "episode": 18,
+    "title": "The Club",
+    "air_date": "21 MARCH 1995"
+  },
+  {
+    "season": 2,
+    "episode": 19,
+    "title": "Someone To Watch Over Me",
+    "air_date": "28 MARCH 1995"
+  },
+  {
+    "season": 2,
+    "episode": 20,
+    "title": "Breaking The Ice",
+    "air_date": "18 APRIL 1995"
+  },
+  {
+    "season": 2,
+    "episode": 21,
+    "title": "An Affair To Forget",
+    "air_date": "2 MAY 1995"
+  },
+  {
+    "season": 2,
+    "episode": 22,
+    "title": "Agents In America: Part 3",
+    "air_date": "9 MAY 1995"
+  },
+  {
+    "season": 2,
+    "episode": 23,
+    "title": "The Innkeepers",
+    "air_date": "16 MAY 1995"
+  },
+  {
+    "season": 2,
+    "episode": 24,
+    "title": "Dark Victory",
+    "air_date": "23 MAY 1995"
+  },
+  {
+    "season": 3,
+    "episode": 1,
+    "title": "She's The Boss",
+    "air_date": "19 September 1995"
+  },
+  {
+    "season": 3,
+    "episode": 2,
+    "title": "Shrink Rap",
+    "air_date": "26 September 1995"
+  },
+  {
+    "season": 3,
+    "episode": 3,
+    "title": "Martin Does It His Way",
+    "air_date": "10 October 1995"
+  },
+  {
+    "season": 3,
+    "episode": 4,
+    "title": "Leapin' Lizards",
+    "air_date": "31 October 1995"
+  },
+  {
+    "season": 3,
+    "episode": 5,
+    "title": "Kisses Sweeter Than Wine",
+    "air_date": "7 November 1995"
+  },
+  {
+    "season": 3,
+    "episode": 6,
+    "title": "Sleeping With The Enemy",
+    "air_date": "14 November 1995"
+  },
+  {
+    "season": 3,
+    "episode": 7,
+    "title": "The Adventures of Bad Boy and Dirty Girl",
+    "air_date": "21 November 1995"
+  },
+  {
+    "season": 3,
+    "episode": 8,
+    "title": "The Last Time I Saw Maris",
+    "air_date": "28 November 1995"
+  },
+  {
+    "season": 3,
+    "episode": 9,
+    "title": "Frasier Grinch",
+    "air_date": "19 December 1995"
+  },
+  {
+    "season": 3,
+    "episode": 10,
+    "title": "It's Hard To Say Goodbye If You Won't Leave",
+    "air_date": "9 January 1996"
+  },
+  {
+    "season": 3,
+    "episode": 11,
+    "title": "The Friend",
+    "air_date": "16 January 1996"
+  },
+  {
+    "season": 3,
+    "episode": 12,
+    "title": "Come Lie With Me",
+    "air_date": "30 January 1996"
+  },
+  {
+    "season": 3,
+    "episode": 13,
+    "title": "Moon Dance",
+    "air_date": "6 February 1996"
+  },
+  {
+    "season": 3,
+    "episode": 14,
+    "title": "The Show Where Diane Comes Back",
+    "air_date": "13 February 1996"
+  },
+  {
+    "season": 3,
+    "episode": 15,
+    "title": "A Word To The Wiseguy",
+    "air_date": "20 February 1996"
+  },
+  {
+    "season": 3,
+    "episode": 16,
+    "title": "Look Before You Leap",
+    "air_date": "27 February 1996"
+  },
+  {
+    "season": 3,
+    "episode": 17,
+    "title": "High Crane Drifter",
+    "air_date": "12 March 1996"
+  },
+  {
+    "season": 3,
+    "episode": 18,
+    "title": "Chess Pains",
+    "air_date": "26 March 1996"
+  },
+  {
+    "season": 3,
+    "episode": 19,
+    "title": "Crane vs. Crane",
+    "air_date": "9 April 1996"
+  },
+  {
+    "season": 3,
+    "episode": 20,
+    "title": "Police Story",
+    "air_date": "23 April 1996"
+  },
+  {
+    "season": 3,
+    "episode": 21,
+    "title": "Where There's Smoke, There's Fired",
+    "air_date": "30 April 1996"
+  },
+  {
+    "season": 3,
+    "episode": 22,
+    "title": "Frasier Loves Roz",
+    "air_date": "7 May 1996"
+  },
+  {
+    "season": 3,
+    "episode": 23,
+    "title": "The Focus Group",
+    "air_date": "14 May 1996"
+  },
+  {
+    "season": 3,
+    "episode": 24,
+    "title": "You Can Go Home Again",
+    "air_date": "21 May 1996"
+  }
+]
